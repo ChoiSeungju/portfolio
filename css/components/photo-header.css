@@ -1,0 +1,37 @@
+.photo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin: 50px var(--horizontal-space);
+}
+
+.photo-header__title {
+  color: #212224;
+  width: 50%;
+  text-align: center;
+}
+
+.photo-header__title h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.photo-header__title h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.photo-header__profile {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photo-header__profile img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
