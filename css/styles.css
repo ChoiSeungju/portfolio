@@ -7,6 +7,7 @@
 @import "components/nav-bar.css";
 @import "components/about.css";
 @import "components/work.css";
+@import "components/section-title.css";
 
 body {
   /*
