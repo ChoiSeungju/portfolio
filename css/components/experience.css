@@ -1,0 +1,78 @@
+.experience {
+  margin-top: 4rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.experience__image img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  align-items: center;
+}
+
+/* hover styles */
+.experience__list {
+  position: relative;
+  text-align: center;
+}
+
+.experience__image {
+  line-height: 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+.experience__image img {
+  filter: blur(0px);
+  transition: transform 0.3s ease-in;
+}
+
+.experience__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(20, 0, 10, 0.4);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience__list:hover .experience__title {
+  opacity: 1;
+}
+
+.experience__list:hover .experience__image img {
+  filter: blur(2px);
+  /* 마우스 오버시 이미지 크기를 1.1 배만큼 확대시킨다. */
+  transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+/* for touch screen devices */
+@media (hover: none) {
+  .experience__title {
+    opacity: 1;
+  }
+  .experience__image img {
+    filter: blur(2px);
+  }
+}
