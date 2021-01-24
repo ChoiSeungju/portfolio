@@ -4,6 +4,7 @@
 
 /* Components */
 @import "components/photo-header.css";
+@import "components/nav-bar.css";
 
 body {
   /*

@@ -7,7 +7,7 @@
 }
 
 .photo-header__title {
-  color: #212224;
+  color: var(--text-dark);
   width: 50%;
   text-align: center;
 }
